@@ -63,7 +63,7 @@ export default function App() {
       </div>
 
       <div className="w-full  bg-WhiteBackground flex flex-col items-center justify-center h-fit">
-        <h1 className="text-center text-4xl mt-28 w-24 font-merriWeather tracking-wide font-semibold ">
+        <h1 className="text-center text-4xl mt-28  font-merriWeather tracking-wide font-semibold ">
           Main Projects
         </h1>
 
