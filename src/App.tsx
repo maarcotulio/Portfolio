@@ -45,11 +45,12 @@ export default function App() {
           <img src={ChevronDownIcon} alt="Go Down Chevron Icon" />
         </div>
       </div>
-      <div className=" bg-DarkBaground text-white  p-28">
+
+      <div className="flex items-center justify-center flex-col bg-DarkBaground text-white  p-28">
         <h1 className="text-center text-4xl font-merriWeather tracking-wide font-semibold mb-12">
           Main Skills
         </h1>
-        <div className="flex gap-8 flex-col items-center justify-evenly sm:flex-row">
+        <div className="mt-8 flex gap-8 flex-col items-center justify-evenly sm:flex-row w-full">
           <div>
             <img src={ReactIcon} alt="React Icon" className="h-24" />
             <p className="mt-6 tracking-wide text-center  text-2xl">React</p>
@@ -62,7 +63,7 @@ export default function App() {
       </div>
 
       <div className="w-full  bg-WhiteBackground flex flex-col items-center justify-center h-fit">
-        <h1 className="text-center text-4xl mt-28  font-merriWeather tracking-wide font-semibold ">
+        <h1 className="text-center text-4xl mt-28 w-24 font-merriWeather tracking-wide font-semibold ">
           Main Projects
         </h1>
 
