@@ -29,7 +29,8 @@ export function ProjectsList() {
         >
           <img
             src={fincheckImage}
-            alt="Project Image"
+            alt="Fincheck Image"
+            loading="lazy"
             className="scale-[3.5] h-60 object-cover w-96"
           />
         </Modal>
@@ -45,7 +46,8 @@ export function ProjectsList() {
         >
           <img
             src={splashWaiterApp}
-            alt="Project Image"
+            alt="Waiter App Image"
+            loading="lazy"
             className="scale-[2.5] h-60 object-cover w-96"
           />
         </Modal>
@@ -61,8 +63,9 @@ export function ProjectsList() {
         >
           <img
             src={ankiAddImage}
-            alt="Project Image"
+            alt="Anki Add Image"
             className="scale-[1.3] h-60 w-96 object-contain"
+            loading="lazy"
           />
         </Modal>
       </ProjectCard>
