@@ -6,23 +6,14 @@ import ChevronDownIcon from "./assets/icons/chevron-down.svg";
 import ReactIcon from "./assets/icons/react.svg";
 import NodeIcon from "./assets/icons/nodejs-icon.svg";
 
-import fincheckLowResolution from "./assets/images/fincheckLowResolution.png";
-import ankiAddImage from "./assets/images/ankiadd.svg";
+import { ProjectsList } from "./view/ProjectsList";
 
 export default function App() {
-  function handleClickAnkiAdd() {
-    window.open("https://github.com/maarcotulio/AnkiAdd", "_blank")?.focus();
-  }
-
-  function handleClickFincheck() {
-    window.open("https://github.com/maarcotulio/fincheck/", "_blank")?.focus();
-  }
-
   return (
     <>
       <div className="h-screen w-full bg-WhiteBackground flex flex-col items-center justify-center relative">
         <h1 className="font-merriWeather text-5xl text-center">Marco Túlio</h1>
-        <p className="mt-4 text-lg">Full Stack Developer</p>
+        <p className="mt-4 text-lg">Software Developer</p>
 
         <div className="flex mt-4 gap-4">
           <a
@@ -67,47 +58,7 @@ export default function App() {
           Main Projects
         </h1>
 
-        <div className="flex flex-col mt-12 w-full gap-12 items-center justify-center p-12 lg:flex-row lg:justify-evenly">
-          <div
-            className="bg-CardBackground rounded-lg overflow-hidden  flex flex-col hover:cursor-pointer hover:scale-105 max-w-96 w-full "
-            onClick={handleClickFincheck}
-          >
-            <img
-              src={fincheckLowResolution}
-              alt="Project Image"
-              className="w-96 h-72 "
-            />
-
-            <div className="p-4 ">
-              <h1 className="font-semibold text-lg">Fincheck</h1>
-              <p className="text-gray-800">
-                The main goal is to help users manage their finances in a simple
-                and effective way. The project provides tools to record expenses
-                and investments and track their transactions.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="bg-CardBackground rounded-lg overflow-hidden flex flex-col hover:cursor-pointer hover:scale-105 max-w-96 w-full"
-            onClick={handleClickAnkiAdd}
-          >
-            <img
-              src={ankiAddImage}
-              alt="Project Image"
-              className="w-96 h-72 object-cover"
-            />
-
-            <div className=" p-4">
-              <h1 className="font-semibold text-lg">AnkiAdd</h1>
-              <p className="text-gray-800">
-                This project automatically creates flashcards in Anki, reducing
-                manual entry time by 80%. The main goal is to make learning new
-                languages easier.
-              </p>
-            </div>
-          </div>
-        </div>
+        <ProjectsList />
       </div>
     </>
   );

@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         WhiteBackground: "#EDEDED",
-        DarkBaground: "#091D26",
+        DarkBaground: "#000000",
 
         CardBackground: "#EDE6DF",
 
@@ -180,6 +180,22 @@ export default {
       },
       fontFamily: {
         merriWeather: ["Merriweather"],
+      },
+      keyframes: {
+        overlayShow: {
+          from: { opacity: "0" },
+          to: { opacity: "0.8" },
+        },
+        contentShow: {
+          from: {
+            opacity: "0",
+          },
+          to: { opacity: "1" },
+        },
+      },
+      animation: {
+        "overlay-show": "overlayShow 200ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "content-show": "contentShow 200ms cubic-bezier(0.16, 1, 0.3, 1)",
       },
     },
   },
