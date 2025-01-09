@@ -6,8 +6,8 @@ import splashWaiterApp from "../../assets/images/splashWaiterApp.png";
 import ankiAddImage from "../../assets/images/ankiadd.png";
 
 export function ProjectsList() {
-  const techFincheck = ["TS", "Nest.JS", "React", "Prisma", "PostgreSQL"];
-  const techAnkiAdd = ["React", "API", "Node"];
+  const techFincheck = ["TS", "Nest.js", "React", "Prisma", "PostgreSQL"];
+  const techAnkiAdd = ["React", "API", "Nest.js"];
   const techWaiterApp = ["React Native", "React", "WebSockets", "MongoDB"];
 
   function handleCode(url: string) {
@@ -55,16 +55,16 @@ export function ProjectsList() {
 
       <ProjectCard>
         <Modal
-          title="AnkiAdd"
+          title="AnkiAdd 2.0"
           technologies={techAnkiAdd}
-          description="The project accelerated by 80% the process of adding flashcards in Anki, a spaced repetition program, for language learners."
-          code={() => handleCode("https://github.com/maarcotulio/ankiadd")}
-          demo={() => handleDemo("https://youtu.be/3gQZgkKosLo")}
+          description="The project accelerated by 80% the process of adding flashcards in Anki, a spaced repetition program, for language learners. The project also have a version to use in the Google Extension."
+          code={() => handleCode("https://github.com/maarcotulio/AnkiAdd2.0")}
+          demo={() => handleDemo("https://youtu.be/mOshCmMTaAc")}
         >
           <img
             src={ankiAddImage}
             alt="Anki Add Image"
-            className="scale-[1.3] h-60 w-96 object-contain"
+            className="scale-[1.2] h-60 w-96 object-cover"
             loading="lazy"
           />
         </Modal>
