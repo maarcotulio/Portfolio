@@ -26,6 +26,7 @@ export function ProjectsList() {
           technologies={techFincheck}
           description="The project is built help users manage their finances in a simple and effective way. The project provides tools to record expenses and investments and track their transactions."
           code={() => handleCode("https://github.com/maarcotulio/fincheck")}
+          demo={() => handleDemo("https://youtu.be/hZ3X3BL3XiI")}
         >
           <img
             src={fincheckImage}
