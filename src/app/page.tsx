@@ -65,7 +65,7 @@ export default function Home() {
             onLetterAnimationComplete={handleAnimationComplete}
           />
           <SplitText
-            text="Engenheiro de Software"
+            text="Desenvolvedor Full-Stack"
             className="text-2xl font-medium font-figTree"
             delay={100}
             duration={0.2}
